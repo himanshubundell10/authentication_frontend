@@ -12,7 +12,7 @@ const App = () => {
   const { setUser, setIsAuth } = useContext(contex);
   useEffect(() => {
     axios
-      .get(`${server}/me`, {
+      .get(`${server}/users/me`, {
         headers: { "Content-Type": "application/json" },
         withCredentials: true,
       })
