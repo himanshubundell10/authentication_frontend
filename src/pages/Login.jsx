@@ -15,7 +15,7 @@ const Login = () => {
       const toastId = toast.loading("Login...")
       try {
         const { data } = await axios.post(
-          `${server}/login`,
+          `${server}/users/login`,
           { email, password },
           {
             headers: { "Content-Type": "application/json" },

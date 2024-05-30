@@ -20,7 +20,7 @@ const Register = () => {
     const toastId = toast.loading("Register...")
     try {
       const { data } = await axios.post(
-        `${server}/register`,
+        `${server}/users/register`,
         { name, email, password },
         {
           headers: { "Content-Type": "application/json" },

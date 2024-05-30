@@ -10,7 +10,7 @@ const Home = () => {
 
   const handleLogout = async() => {
    try {
-    const {data}= await axios.get(`${server}/logout`,{
+    const {data}= await axios.get(`${server}/users/logout`,{
       headers:{"Content-Type":"application/json"},
       withCredentials:true
     })
